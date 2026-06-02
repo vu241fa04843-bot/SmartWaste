@@ -44,3 +44,5 @@ def admin_dashboard(request):
     )
 def complaint_form(request):
     return render(request, 'citizen/complaint_form.html')
+def login_page(request):
+    return render(request, 'login.html')

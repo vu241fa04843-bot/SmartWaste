@@ -1,23 +1,26 @@
-<form method="POST">
+{% load static %}
 
-{% csrf_token %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Waste Management</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
 
-Username
+<div class="container">
+    <div class="login-card">
+        <h1>♻ Smart Waste Management</h1>
+        <p>Keep your city clean and sustainable</p>
 
-<input type="text" name="username">
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
 
-<br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
 
-Password
-
-<input type="password" name="password">
-
-<br><br>
-
-<button type="submit">
-
-Login
-
-</button>
-
-</form>
+</body>
+</html>
